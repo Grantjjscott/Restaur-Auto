@@ -2,20 +2,12 @@ import java.util.*;
 
 public class Server extends Employee 
 {
-	private float custTimeAllTime;
-	private float custTimeThisMonth;
-	private float custTimeThisPeriod;
-	
-	public Server(int empID, String name, double payrate, String startdate, float hoursThisPeriod, 
-			      float hoursThisYear, float custTimeAllTime, float custTimeThisMonth, 
-			      float custTimeThisPeriod)
-	{
-		super(empID, name, payrate, startdate, hoursThisPeriod, hoursThisYear);
-		this.custTimeAllTime = custTimeAllTime;
-		this.custTimeThisMonth = custTimeThisMonth;
-		this.custTimeThisPeriod = custTimeThisPeriod;
+
+	public Server(int empID, String name, double payrate) {
+		super(empID, name, payrate);
+		// TODO Auto-generated constructor stub
 	}
-	
+
 	public void addOrder(String status, int orderNum)
 	{
 		Order order = new Order(status, orderNum);
@@ -32,10 +24,10 @@ public class Server extends Employee
 		Order.order.remove(o.getOrderNum());
 	}
 	
-	public void setOrdertoServed(int orderNum)
-	{
-		Order.order.get(orderNum-1).setOrderStatus("Served");
-	}
+//	public void setOrdertoServed(int orderNum)
+//{
+//	Order.order.get(orderNum-1).setOrderStatus("Served");
+//}
 	
 	public void setToDirty(Table t)
 	{

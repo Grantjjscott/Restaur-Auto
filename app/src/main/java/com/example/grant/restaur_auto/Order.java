@@ -4,6 +4,7 @@ public class Order
 {
 	static LinkedList<Order> order = new LinkedList<Order>();
 	public String status;
+	
 	public int orderNum;
 
 	public Order()

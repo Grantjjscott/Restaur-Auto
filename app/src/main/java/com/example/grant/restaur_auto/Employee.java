@@ -1,19 +1,21 @@
-public class Employee
-{
-    public static int empID;
-    public static String name;
-    public static double payrate;
-    public static String startdate;
-    public static float hoursThisPeriod;
-    public static float hoursThisYear;
-    
-    public Employee(int empID, String name, double payrate, String startdate, float hoursThisPeriod, float hoursThisYear)
+public class Employee{
+    protected int empID;
+    private String name;
+    private double payrate;
+    private String startdate;
+    //private float hoursThisPeriod;
+    //private float hoursThisYear;
     {
-    	this.empID = empID;
-    	this.name = name;
-    	this.payrate = payrate;
-    	this.startdate = startdate;
-    	this.hoursThisPeriod = hoursThisPeriod;
-    	this.hoursThisYear = hoursThisYear;
+    	
     }
-}
+	public Employee(int empID, String name, double payrate) {
+		super();
+		this.empID = empID;
+		this.name = name;
+		this.payrate = payrate;
+		//this.startdate = startdate;
+		//this.hoursThisPeriod = hoursThisPeriod;
+		//this.hoursThisYear = hoursThisYear;
+	}
+
+    }
