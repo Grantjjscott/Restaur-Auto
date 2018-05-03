@@ -51,4 +51,10 @@ public class Item
 		System.out.println(itemDescription);
 		System.out.println(itemAmount);
 	}
+
+	@Override
+	public String toString() {
+		String print = (itemName + "           " +itemPrice);
+		return print;
+	}
 }

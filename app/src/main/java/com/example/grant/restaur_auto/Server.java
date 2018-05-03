@@ -8,29 +8,34 @@ public class Server extends Employee
 		// TODO Auto-generated constructor stub
 	}
 
-	public void addOrder(String status, int orderNum)
-	{
-		Order order = new Order(status, orderNum);
-		Order.order.add(order);
+	public void Removefromorder(Order order, Item item, int quantity) {
+		order.removeItems(item, quantity);
+}
+	public void addToOrder(Order order, Item item, int quantity) {
+		 while (quantity > 0) {
+		
+		 order.order.add(item); 
+		quantity--; 
+		 }
 	}
 	
-	public void changeOrder(Order o)
-	{
-		Order.order.set(o.getOrderNum(), o );
+	public void setOrdertoServe(Order order) {
+		order.setOrderStatus(2);
+		System.out.println(getName() +" has served Order #" +order.orderNum);
+		
 	}
 	
-	public void removeOrder(Order o)
-	{
-		Order.order.remove(o.getOrderNum());
+	public void setOrdertoPaid(Order order) {
+		order.setOrderStatus(3);
+		System.out.println(getName() +" has taken payment for Order #" +order.orderNum);
 	}
-	
-//	public void setOrdertoServed(int orderNum)
-//{
-//	Order.order.get(orderNum-1).setOrderStatus("Served");
-//}
-	
 	public void setToDirty(Table t)
 	{
-		Table.table.get(t.getTableNum()).setStatus("dirty");
+		Table.table.get(t.getTableNum()).setStatus(2);
 	}
-}
+	public Order newOrder(int num, Table table ) {
+		Order order = new Order(num, table);
+		return order;
+	}
+	}
+

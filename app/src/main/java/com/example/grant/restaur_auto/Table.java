@@ -4,11 +4,11 @@ public class Table
 {
 	int tableNum = 0;
 	int numOfSeats = 0;
-	String status = "unoccupied";
+	int status = 0;// 0 = uncoppuied, 1 = in use// 2 == dirty
 	static LinkedList<Table> table = new LinkedList<Table>();
 	
 
-	public Table (int tableNum, int numOfSeats, String status)
+	public Table (int tableNum, int numOfSeats, int status)
 	{
 		this.tableNum = tableNum;
 		this.numOfSeats = numOfSeats;
@@ -30,7 +30,7 @@ public class Table
 		this.numOfSeats = numOfSeats;
 	}
 	
-	public void setStatus(String status)
+	public void setStatus(int status)
 	{
 		this.status = status;
 	}
@@ -45,14 +45,14 @@ public class Table
 		return numOfSeats;
 	}
 	
-	public String getStatus()
+	public int getStatus()
 	{
 		return status;
 	}
 	
 	public void addTable(int tableNum, int numOfSeats)
 	{
-		Table t = new Table(tableNum, numOfSeats, "Unoccupied");
+		Table t = new Table(tableNum, numOfSeats, 0);
 		table.add(t);
 	}
 	

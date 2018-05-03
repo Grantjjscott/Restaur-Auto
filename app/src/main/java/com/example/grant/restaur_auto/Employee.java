@@ -11,11 +11,17 @@ public class Employee{
 	public Employee(int empID, String name, double payrate) {
 		super();
 		this.empID = empID;
-		this.name = name;
+		this.setName(name);
 		this.payrate = payrate;
 		//this.startdate = startdate;
 		//this.hoursThisPeriod = hoursThisPeriod;
 		//this.hoursThisYear = hoursThisYear;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
     }

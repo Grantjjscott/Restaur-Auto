@@ -9,6 +9,7 @@ public class Driver {
 	public static void main(String[] args) throws FileNotFoundException {
 		// generated employees
 		Server server01 = new Server(01, "Nate", 7.25);
+		Cook   cook01  =  new Cook(02, "Pam", 15.00); 
 		// generated items
 		
 		Item item01 = new Item("Hot Dog", null, 99, 2.5); 
@@ -22,10 +23,25 @@ public class Driver {
 		System.out.println(menu.get(0));
 		
 		//Table
-		Table tab01 = new Table(01, 2, "unoccupied");
+		Table tab01 = new Table(01, 2, 0);
 		LinkedList<Table> tables = new  LinkedList<Table>();
 		tables.add(tab01);
 		
+		// ORder
+		Order order01 = new Order(01, tab01); 
+		server01.addToOrder(order01, item01, 2);
+		server01.addToOrder(order01, item02, 2);
+		server01.addToOrder(order01, item03, 2);
+		System.out.println(order01.toString());
+		order01.printItems();
+		//server01.Removefromorder(order01, item01, 2);
+		order01.printItems();
+		// serving
+		cook01.SetordertoPrepared(order01);
+		server01.setOrdertoServe(order01);
+		server01.setOrdertoPaid(order01);
+		
+		order01.generateReceipt();
 		
 		
 		
