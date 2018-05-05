@@ -1,5 +1,9 @@
+package com.example.grant.restaur_auto;
+import java.io.Serializable;
+Ipor
 
-public class Item
+
+public class Item implements Serializable
 {
 	private String itemName;
 	private String itemDescription;

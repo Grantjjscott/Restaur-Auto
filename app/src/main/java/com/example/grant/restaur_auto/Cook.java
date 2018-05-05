@@ -1,4 +1,4 @@
-
+package com.example.grant.restaur_auto;
 public class Cook extends Employee {
 
 	public Cook(int empID, String name, double payrate) {
