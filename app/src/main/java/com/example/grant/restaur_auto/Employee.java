@@ -1,4 +1,8 @@
-public class Employee{
+package com.example.grant.restaur_auto;
+
+import java.io.Serializable;
+
+public class Employee implements Serializable{
     protected int empID;
     private String name;
     private double payrate;

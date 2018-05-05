@@ -1,6 +1,8 @@
+package com.example.grant.restaur_auto;
+import java.io.Serializable;
 import java.util.*;
 
-public class Order
+public class Order implements Serializable
 {
 	LinkedList<Item> order = new LinkedList<Item>();
 	public int status = 0 ; // 0= received, 1= prepared, 2 = served, 3 = paid 

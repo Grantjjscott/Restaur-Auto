@@ -1,6 +1,9 @@
+package com.example.grant.restaur_auto;
+import java.io.Serializable;
 import java.util.*;
 
-public class Table
+
+public class Table implements Serializable
 {
 	int tableNum = 0;
 	int numOfSeats = 0;

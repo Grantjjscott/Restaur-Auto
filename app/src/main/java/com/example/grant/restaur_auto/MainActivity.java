@@ -5,9 +5,10 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+     static Server server01 = new Server(01, "Nate", 7.25);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_server);
     }
 }
