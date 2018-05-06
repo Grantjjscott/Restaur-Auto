@@ -6,20 +6,24 @@ import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ViewFlipper;
-import android.*;
+import android.content.*;
+
 
 public class ServerActivity extends AppCompatActivity {
 
     public void newOrder(View view){
     MainActivity.server01.newOrder(01, null);
     }
-S
+
     public void printRepceit(View view){
-        I
+        Intent i = new Intent( this, Pop.class) ;
+        startActivityForResult(i, 0);
+
         //order.generateReceipt();
     }
 
-    public void additems(View view){
+    public void additems(View view)
+    {
      MainActivity.server01.addToOrder(null,null, 0);
     }
 
@@ -38,6 +42,12 @@ S
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_server);
+        Button addButton = (Button) findViewById(R.id.ad);
+
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,Pop.class));
     }
 
 }
