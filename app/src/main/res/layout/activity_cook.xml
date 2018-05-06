@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".CookActivity">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> save-my-ass-branch
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="344dp"
@@ -23,15 +28,59 @@
             android:orientation="vertical" />
     </ScrollView>
 
+<<<<<<< HEAD
+=======
+>>>>>>> d497fc46d9b4effca65bdcae52d12ebe712bd6b5
+>>>>>>> save-my-ass-branch
     <Button
         android:id="@+id/button10"
         android:layout_width="260dp"
         android:layout_height="66dp"
         android:layout_marginBottom="8dp"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        android:text="Mark as Served"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/orderview"
+        android:layout_width="319dp"
+        android:layout_height="324dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="109dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Orders"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+=======
+>>>>>>> save-my-ass-branch
         android:layout_marginTop="8dp"
         android:text="Mark as Served"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+<<<<<<< HEAD
+=======
+>>>>>>> d497fc46d9b4effca65bdcae52d12ebe712bd6b5
+>>>>>>> save-my-ass-branch
 </android.support.constraint.ConstraintLayout>
