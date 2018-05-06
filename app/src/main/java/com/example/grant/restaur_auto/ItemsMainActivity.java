@@ -1,4 +1,5 @@
-package com.example.asuper.myapplication;
+package com.example.grant.restaur_auto;
+
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +18,7 @@ import java.util.List;
 
 public class ItemsMainActivity extends AppCompatActivity {
 
-    private ArrayList<String> arrayList;
+/*    private ArrayList<String> arrayList;
     private ArrayAdapter<String> adapter;
     private EditText txtInput;
     public void onCreate(Bundle savedInstanceState) {
@@ -35,8 +36,7 @@ public class ItemsMainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     String newItem= txtInput.getText().toString();
                     arrayList.add(newItem);
-                    adapter.notifyDataSetChanged();
-                }
+                 adapter.notifyDataSetChanged();
             });
-    }
+    }  */
 }

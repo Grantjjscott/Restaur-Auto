@@ -18,7 +18,7 @@ public class Table implements Serializable
 		this.status = status;
 	}
 	
-	public Table()
+	public Table(int i, int i1)
 	{
 		
 	}

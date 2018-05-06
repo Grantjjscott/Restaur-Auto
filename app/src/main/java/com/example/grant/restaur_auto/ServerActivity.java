@@ -1,5 +1,6 @@
 package com.example.grant.restaur_auto;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Display;
@@ -11,12 +12,14 @@ import android.*;
 public class ServerActivity extends AppCompatActivity {
 
     public void newOrder(View view){
-    MainActivity.server01.newOrder(01, null);
+    Intent order = new Intent(this, NewOrderActivity.class);
+    startActivity(order);
     }
-S
+
     public void printRepceit(View view){
-        I
-        //order.generateReceipt();
+    Intent repceit = new Intent(this, Pop.class);
+        startActivity(repceit);
+    //order.generateReceipt();
     }
 
     public void additems(View view){
