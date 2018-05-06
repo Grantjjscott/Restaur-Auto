@@ -6,11 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".CookActivity">
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> save-my-ass-branch
+
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="344dp"
@@ -28,18 +25,14 @@
             android:orientation="vertical" />
     </ScrollView>
 
-<<<<<<< HEAD
-=======
->>>>>>> d497fc46d9b4effca65bdcae52d12ebe712bd6b5
->>>>>>> save-my-ass-branch
+
+
     <Button
         android:id="@+id/button10"
         android:layout_width="260dp"
         android:layout_height="66dp"
         android:layout_marginBottom="8dp"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
         android:text="Mark as Served"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,16 +64,4 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-=======
->>>>>>> save-my-ass-branch
-        android:layout_marginTop="8dp"
-        android:text="Mark as Served"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
-<<<<<<< HEAD
-=======
->>>>>>> d497fc46d9b4effca65bdcae52d12ebe712bd6b5
->>>>>>> save-my-ass-branch
 </android.support.constraint.ConstraintLayout>

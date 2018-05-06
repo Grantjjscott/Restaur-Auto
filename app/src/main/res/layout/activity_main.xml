@@ -20,22 +20,16 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="145dp"
+        android:layout_width="149dp"
         android:layout_height="92dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-<<<<<<< HEAD
-        android:onClick="sendMessage"
-=======
-<<<<<<< HEAD
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:onClick="toServer"
-=======
-        android:onClick="sendMessage"
->>>>>>> d497fc46d9b4effca65bdcae52d12ebe712bd6b5
->>>>>>> save-my-ass-branch
         android:text="Server"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <Button
         android:id="@+id/button7"

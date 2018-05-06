@@ -21,13 +21,7 @@ public class TableActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_table);
         ListView listView = (ListView)findViewById(R.id.ListView);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-=======
->>>>>>> d497fc46d9b4effca65bdcae52d12ebe712bd6b5
->>>>>>> save-my-ass-branch
          adapter = new ArrayAdapter<Table>(this,android.R.layout.simple_expandable_list_item_1,MainActivity.tables);
 
         listView.setAdapter(adapter);
