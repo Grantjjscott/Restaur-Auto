@@ -25,11 +25,14 @@
         android:layout_marginTop="16dp"
         android:text="Status"
 <<<<<<< HEAD
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.721"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="parent" />
 =======
+=======
+>>>>>>> parent of 53538ad... Update activity_table.xml
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.721"
         app:layout_constraintStart_toEndOf="@+id/textView4"
