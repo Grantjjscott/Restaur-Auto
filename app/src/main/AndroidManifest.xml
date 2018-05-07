@@ -20,7 +20,12 @@
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2" />
         <activity android:name=".ServerActivity" />
-        <activity android:name=".Pop"></activity>
+        <activity android:name=".Pop" />
+        <activity android:name=".CookActivity" />
+        <activity android:name=".NewOrderActivity" />
+        <activity android:name=".CreateTableActivity" />
+        <activity android:name=".TableActivity" />
+        <activity android:name=".AddtoOrder"></activity>
     </application>
 
 </manifest>

@@ -5,8 +5,8 @@ import java.util.*;
 
 public class Table implements Serializable
 {
-	int tableNum = 0;
-	int numOfSeats = 0;
+	int tableNum;
+	int numOfSeats;
 	int status = 0;// 0 = uncoppuied, 1 = in use// 2 == dirty
 	static LinkedList<Table> table = new LinkedList<Table>();
 	
@@ -18,7 +18,7 @@ public class Table implements Serializable
 		this.status = status;
 	}
 	
-	public Table()
+	public Table(int i, int i1)
 	{
 		
 	}
@@ -63,6 +63,13 @@ public class Table implements Serializable
 	{
 		table.remove(table.indexOf(t));
 	}
-	
-	//didn't implement merge table
+
+
+	@Override
+	public String toString() {
+		String tableString;
+		tableString =  (getTableNum()+ ". " + getNumOfSeats() +  "  "+ getStatus());
+		return tableString ;
+	}
+//didn't implement merge table
 }
