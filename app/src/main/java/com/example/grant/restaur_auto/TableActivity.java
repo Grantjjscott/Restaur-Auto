@@ -34,21 +34,23 @@ public class TableActivity extends AppCompatActivity {
         setContentView(R.layout.activity_table);
         
         ListView listView = (ListView)findViewById(R.id.ListView);
-
+<<<<<<< HEAD
 //read tables to list
          adapter = new ArrayAdapter<Table>(this,android.R.layout.simple_expandable_list_item_1,MainActivity.tables);
 
-
+=======
+        adapter = new ArrayAdapter<Table>(this,android.R.layout.simple_expandable_list_item_1, MainActivity.tables);
+>>>>>>> bc32b0e2f1eb1d7094caeab19360882087cb18c4
         listView.setAdapter(adapter);
         
         
     }
-
+<<<<<<< HEAD
  //table navigation
-
+=======
     
     //Opens up a dialog box where the User enters the number of seats at the new table
-
+>>>>>>> bc32b0e2f1eb1d7094caeab19360882087cb18c4
     public void addTable(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Add Table ");
