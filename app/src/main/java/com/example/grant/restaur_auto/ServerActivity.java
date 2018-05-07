@@ -23,17 +23,19 @@ import java.util.ArrayList;
 import static android.widget.Toast.LENGTH_SHORT;
 
 public class ServerActivity extends AppCompatActivity {
+
     private ArrayAdapter<String> adapter;
-    ArrayList<String> items;
-    int i;
-    int itemid;
-    static ArrayList<Item> temp;
-    static AdapterView clicker;
-    Toast toast;
-    String onAdd;
-    Context context;
+    private    ArrayList<String> items;
+    private int i;
+    private int itemid;
+    protected static ArrayList<Item> temp;
+     private static AdapterView clicker;
+     private Toast toast;
+    private String onAdd;
+
 
     ListView listView;
+    // button methods
     public void newOrder(View view){
     Intent order = new Intent(this, NewOrderActivity.class);
     startActivity(order);
@@ -84,13 +86,14 @@ public class ServerActivity extends AppCompatActivity {
         itemid = 0;
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, items);
         listView.setAdapter(adapter);
-
+        // multiple choice list
         listView.setChoiceMode(AbsListView.CHOICE_MODE_MULTIPLE);
-
+        // create listener
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
+            // onclick for add items
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                 itemid = i;
+                itemid = i;
                 temp.add((Item) MainActivity.menu.get(itemid));
                 onAdd = "item selected";
                 toast.makeText(listView.getContext() , onAdd, Toast.LENGTH_SHORT).show();

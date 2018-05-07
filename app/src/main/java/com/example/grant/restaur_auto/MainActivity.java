@@ -12,14 +12,19 @@ package com.example.grant.restaur_auto;
         import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
+    // global vars
     static int orderCount = 1;
     static int tableCount = 1;
+    //test server
     static Server server01 = new Server(01, "Nate", 7.25);
+
+    // global list
     public static ArrayList<Table> tables = new ArrayList<Table>();
     public static ArrayList<Order> orders = new ArrayList<Order>();
-
     public static Menu2 menu = new Menu2();
+
     static Boolean loaded = false;
+    // test items
     static Item item01 = new Item("Hot Dog", null, 99, 2.5);
     static Item item02= new Item("French Fries", null, 99, 2.50);
     static Item item03= new Item ("Soft Drink", null, 99, 1.00);
@@ -35,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // load items to menu
         if (loaded == false) {// first time load menu
             menu.add(item01);
             menu.add(item02);
@@ -51,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 //to server view
+// navigation buttons
     public void toServer(View view) {
         Intent serverView = new Intent(this, ServerActivity.class);
         startActivity(serverView);

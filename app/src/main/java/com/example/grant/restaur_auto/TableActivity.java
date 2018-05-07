@@ -21,12 +21,12 @@ public class TableActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_table);
         ListView listView = (ListView)findViewById(R.id.ListView);
-
+//read tables to list
          adapter = new ArrayAdapter<Table>(this,android.R.layout.simple_expandable_list_item_1,MainActivity.tables);
 
         listView.setAdapter(adapter);
     }
-
+ //table navigation
     public void addTable(View view){
         Intent newTable = new Intent(this, CreateTableActivity.class);
         startActivity(newTable);

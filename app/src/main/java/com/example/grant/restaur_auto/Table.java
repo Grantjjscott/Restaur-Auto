@@ -10,7 +10,7 @@ public class Table implements Serializable
 	int status = 0;// 0 = uncoppuied, 1 = in use// 2 == dirty
 	static LinkedList<Table> table = new LinkedList<Table>();
 	
-
+//constructors
 	public Table (int tableNum, int numOfSeats, int status)
 	{
 		this.tableNum = tableNum;
@@ -22,7 +22,7 @@ public class Table implements Serializable
 	{
 		
 	}
-	
+	//getters and setts
 	public void setTableNum(int tableNum)
 	{
 		this.tableNum = tableNum;
