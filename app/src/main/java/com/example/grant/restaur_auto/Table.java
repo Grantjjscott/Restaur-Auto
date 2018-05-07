@@ -68,7 +68,10 @@ public class Table implements Serializable
 	@Override
 	public String toString() {
 		String tableString;
-		tableString =  (getTableNum()+ ". " + getNumOfSeats() +  "  "+ getStatus());
+		if(getStatus() == 0)
+			tableString =  ("Table Number: " + getTableNum()+ "\nNumber of Seats: " + getNumOfSeats() +  "\nStatus: Unoccupied");
+		else
+			tableString =  ("Table Number: " + getTableNum()+ "\nNumber of Seats: " + getNumOfSeats() +  "\nStatus: Occupied");
 		return tableString ;
 	}
 //didn't implement merge table
