@@ -24,7 +24,8 @@
         <activity android:name=".CookActivity" />
         <activity android:name=".NewOrderActivity" />
         <activity android:name=".CreateTableActivity" />
-        <activity android:name=".TableActivity"></activity>
+        <activity android:name=".TableActivity" />
+        <activity android:name=".AddtoOrder"></activity>
     </application>
 
 </manifest>
