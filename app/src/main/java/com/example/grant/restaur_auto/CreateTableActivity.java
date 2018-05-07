@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.content.Intent;
 
 public class CreateTableActivity extends AppCompatActivity {
   private  EditText UserIn;
@@ -19,16 +20,14 @@ public class CreateTableActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_table);
         UserIn=(EditText) findViewById(R.id.userIn);
 }
-
-
         public void NewTable (View view){
             tablenum = MainActivity.tableCount;
             numOfSeats = Integer.parseInt(String.valueOf(UserIn.getText()));
-            Table tab = new Table(tablenum, numOfSeats);
+            Table tab = new Table(tablenum, numOfSeats, 0);
             MainActivity.tables.add(tab);
             MainActivity.tableCount++;
             onCreate = "Table Added";
             toast.makeText(this, onCreate, Toast.LENGTH_SHORT).show();
-
         }
+
 }
