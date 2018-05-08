@@ -1,15 +1,16 @@
 package com.example.grant.restaur_auto;
 
 import android.app.ActionBar;
-import android.content.Intent;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.support.v7.app.AppCompatActivity;
@@ -32,25 +33,15 @@ public class TableActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_table);
-        
-        ListView listView = (ListView)findViewById(R.id.ListView);
-<<<<<<< HEAD
-//read tables to list
-         adapter = new ArrayAdapter<Table>(this,android.R.layout.simple_expandable_list_item_1,MainActivity.tables);
 
-=======
+
+        ListView listView = (ListView)findViewById(R.id.ListView);
         adapter = new ArrayAdapter<Table>(this,android.R.layout.simple_expandable_list_item_1, MainActivity.tables);
->>>>>>> bc32b0e2f1eb1d7094caeab19360882087cb18c4
         listView.setAdapter(adapter);
-        
-        
     }
-<<<<<<< HEAD
- //table navigation
-=======
-    
+
+
     //Opens up a dialog box where the User enters the number of seats at the new table
->>>>>>> bc32b0e2f1eb1d7094caeab19360882087cb18c4
     public void addTable(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Add Table ");
@@ -87,7 +78,7 @@ public class TableActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
-    
+
     //Method prompts a dialog box where the User enters the table number whose status will become "occupied"
     public void changeStatus(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -112,7 +103,7 @@ public class TableActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        
+
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -122,5 +113,4 @@ public class TableActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
-    
-    }
+}

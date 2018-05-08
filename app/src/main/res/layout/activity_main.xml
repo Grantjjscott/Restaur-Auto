@@ -1,6 +1,12 @@
-android:layout_height="match_parent"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context="com.example.grant.restaur_auto.MainActivity">
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <View
     android:id="@+id/divider2"
@@ -75,6 +81,14 @@ app:layout_constraintTop_toTopOf="@+id/guideline10" />
         android:layout_height="92dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+=======
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="145dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+>>>>>>> 95611a105b5103c1c72f3f768128a214a0d6d21d
         android:onClick="toServer"
         android:text="Server"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,8 +109,13 @@ app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <Button
         android:id="@+id/button8"
+<<<<<<< HEAD
         android:layout_width="117dp"
         android:layout_height="77dp"
+=======
+        android:layout_width="145dp"
+        android:layout_height="92dp"
+>>>>>>> 95611a105b5103c1c72f3f768128a214a0d6d21d
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:onClick="toTable"
@@ -122,6 +141,7 @@ app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <Button
         android:id="@+id/button9"
+<<<<<<< HEAD
         android:layout_width="124dp"
         android:layout_height="69dp"
         android:layout_marginEnd="8dp"
@@ -130,8 +150,21 @@ app:layout_constraintTop_toTopOf="@+id/guideline10" />
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.747"
+=======
+        android:layout_width="145dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Manager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+>>>>>>> 95611a105b5103c1c72f3f768128a214a0d6d21d
         app:layout_constraintStart_toEndOf="@+id/button8"
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
 </android.support.constraint.ConstraintLayout>
+<<<<<<< HEAD
 >>>>>>> parent of f40bd0d... final
+=======
+>>>>>>> 95611a105b5103c1c72f3f768128a214a0d6d21d
